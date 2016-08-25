@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/samstephens/.oh-my-zsh
+export ZSH=/Users/sam/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -56,18 +56,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # PYTHON PATHS
-PYPATHS=( "/Users/samstephens/growthintel/repos"
-  "/Users/samstephens/growthintel/repos/devtools"
-  "/Users/samstephens/growthintel/repos/peaches:/Users/samstephens/growthintel/repos/peaches/peaches"
-  "/Users/samstephens/growthintel/repos/api"
-  "/Users/samstephens/growthintel/repos/thug_lyf"
-  "/Users/samstephens/growthintel/repos/plug"
-  "/Users/samstephens/growthintel/Projects"
-  "/Users/samstephens/growthintel/repos/flamingadr"
-  "/Users/samstephens/growthintel/repos/jiraff"
-  "/Users/samstephens/growthintel/repos/mripython"
-  "/Users/samstephens/PycharmProjects"
-  "/Users/samstephens/PycharmProjects/diglett")
+PYPATHS=( "/Users/sam/growthintel/repos"
+          "/Users/sam/PyCharmProjects" )
 
 for ppath in "${PYPATHS[@]}"
   do
@@ -103,16 +93,18 @@ source $ZSH/oh-my-zsh.sh
 alias lk="ls -lhF"
 alias russian-roulette="sudo [ $[ $RANDOM % 6 ] = 0 ] && shutdown -r now || echo \"Click\""
 
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi=vim
+
 # Virtualenv
 export WORKON_HOME=$HOME/growthintel/repos/envs
 export PROJECT_HOME=$HOME/growtintel/repos/
 source /usr/local/bin/virtualenvwrapper.sh
 workon ENV
 
-alias vi=/usr/local/Cellar/macvim/7.4-94/MacVim.app/Contents/MacOS/Vim
-alias vim=vi
+# Mario
+export MARIO_SETTINGS="LocalSettings"
 
-# Spark / Plug
-export SPARK_HOME=/usr/local/Cellar/apache-spark/1.6.0/libexec
-
+# elasticsearch
+export ES_INCLUDE=/usr/local/share/elasticsearch/bin/elasticsearch.in.sh
 
