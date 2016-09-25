@@ -108,3 +108,5 @@ export MARIO_SETTINGS="LocalSettings"
 # elasticsearch
 export ES_INCLUDE=/usr/local/share/elasticsearch/bin/elasticsearch.in.sh
 
+export GOPATH=/Users/samstephens/growthintel/go_workspace
+export PATH=/Users/samstephens/growthintel/go_workspace/bin:/Users/samstephens/growthintel/repos/envs/ENV/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
